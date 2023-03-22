@@ -1,0 +1,11 @@
+.sec-heading {
+	display: block;
+	text-align: center;
+	margin: auto;
+	padding: 50px 0 10px;
+}
+.sec-heading h1 {
+	font-size: 40px;
+	font-weight: 500;
+	color: #e74c3c;
+}

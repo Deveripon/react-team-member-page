@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import ClassSectionHeading from "./classcomponents/ClassSectionHeading";
+import ClassTeamMembarSection from "./classcomponents/ClassTeamMembarSection";
+import SectionHeading from "./components/SectionHeading";
+import TeamMembar from "./components/TeamMembar";
+import SectionSeparator from "./components/SectionSeparator";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<SectionHeading heading={"Meet Our Beatiful Team"} />
+			<SectionSeparator />
+			<TeamMembar />
+			<ClassSectionHeading heading={"Meet Our Beautiful Developer"} color={"orange"} />
+			<SectionSeparator />
+			<ClassTeamMembarSection />
+		</>
+	);
 }
 
 export default App;
